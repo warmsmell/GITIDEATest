@@ -35,19 +35,12 @@
         </div>
     </div>
 
-    <form action="" name="userForm">
+    <form action="${pageContext.request.contextPath}/paper/updatePaper" name="userForm" method="post">
         <input type="hidden" name="paperId" value="${paper.paperId}"/>
         论文名称：<input type="text" name="paperName" value="${paper.paperName}"/>
         论文数量：<input type="text" name="paperNum" value="${paper.paperNum}"/>
         论文详情：<input type="text" name="paperDetail" value="${paper.paperDetail }"/>
-        <input type="button" value="提交" onclick="updatePaper()"/>
+        <input type="submit" value="提交" />
     </form>
-    <script type="text/javascript">
-        function updatePaper() {
-            var form = document.forms[0];
-            form.action = "<%=basePath %>paper/updatePaper";
-            form.method = "post";
-            form.submit();
-        }
-    </script>
+
 </div>

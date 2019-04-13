@@ -41,19 +41,19 @@
             </div>
         </div>
     </div>
-    <form action="" name="userForm">
+    <form action="${pageContext.request.contextPath}/paper/addPaper" name="userForm" method="post">
         论文名称：<input type="text" name="paperName"><br><br><br>
         论文数量：<input type="text" name="paperNum"><br><br><br>
         论文详情：<input type="text" name="paperDetail"><br><br><br>
-        <input type="button" value="添加" onclick="addPaper()">
+        <input type="submit" value="添加" >
     </form>
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         function addPaper() {
             var form = document.forms[0];
             form.action = "<%=basePath %>paper/addPaper";
             form.method = "post";
             form.submit();
         }
-    </script>
+    </script>-->
 </div>

@@ -23,7 +23,7 @@
         WHERE  paper_id = #{paperId}
     </update>
 
-    <select id="queryById" resultType="Paper" parameterType="long">
+    <select id="queryById" resultMap="paperResultMap" parameterType="long">
         SELECT paper_id,name,number,detail
         FROM paper
         WHERE paper_id=#{paperId}

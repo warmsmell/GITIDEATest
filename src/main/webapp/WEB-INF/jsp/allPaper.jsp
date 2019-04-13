@@ -62,7 +62,7 @@
                         <td>${paper.paperDetail}</td>
                         <td>
                             <a href="${path}/paper/toUpdatePaper?id=${paper.paperId}">更改</a> |
-                            <a href="<%=appPath%>/paper/del/${paper.paperId}">删除</a>
+                            <a href="${path}/paper/del?id=${paper.paperId}">删除</a>
                         </td>
                     </tr>
                 </c:forEach>

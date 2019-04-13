@@ -35,8 +35,8 @@ public class PaperController {
         return "redirect:/paper/allPaper";
     }
 
-    @RequestMapping("/del/{paperId}")
-    public String deletePaper(@PathVariable("paperId") Long id) {
+    @RequestMapping("/del")
+    public String deletePaper( Long id) {
         paperService.deletePaperById(id);
         return "redirect:/paper/allPaper";
     }

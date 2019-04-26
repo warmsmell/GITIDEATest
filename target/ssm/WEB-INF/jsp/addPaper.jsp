@@ -48,12 +48,5 @@
         <input type="submit" value="添加" >
     </form>
 
-    <!--<script type="text/javascript">
-        function addPaper() {
-            var form = document.forms[0];
-            form.action = "<%=basePath %>paper/addPaper";
-            form.method = "post";
-            form.submit();
-        }
-    </script>-->
+<!--伟哥牛逼哈哈哈-->
 </div>

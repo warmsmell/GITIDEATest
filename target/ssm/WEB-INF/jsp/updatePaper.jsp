@@ -42,12 +42,5 @@
         论文详情：<input type="text" name="paperDetail" value="${paper.paperDetail }"/>
         <input type="submit" value="提交" />
     </form>
-   <!-- <script type="text/javascript">
-        function updatePaper() {
-            var form = document.forms[0];
-            form.action = "<%=basePath %>paper/updatePaper";
-            form.method = "post";
-            form.submit();
-        }
-    </script>-->
+
 </div>
